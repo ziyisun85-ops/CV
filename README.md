@@ -6,7 +6,7 @@ Homepage: [https://ziyisun85-ops.github.io/](https://ziyisun85-ops.github.io/)
 
 ## Academic CV (TeX Template)
 
-Filled from `Academic_CV_Template` (Dubasi Pavan Kumar).
+Filled from `Academic_CV_Template` (Dubasi Pavan Kumar). Education includes the Roboparty Lab internship; no separate Objective section.
 
 | File | Description |
 |------|-------------|
