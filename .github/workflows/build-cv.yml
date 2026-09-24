@@ -1,0 +1,36 @@
+name: Build CV
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "Academic_CV_Template/main.tex"
+      - "resumes/Ziyi_Sun_Academic_CV_20260808.tex"
+      - ".github/workflows/build-cv.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: xu-cheng/latex-action@v4
+        with:
+          root_file: |
+            Academic_CV_Template/main.tex
+            resumes/Ziyi_Sun_Academic_CV_20260808.tex
+          work_in_root_file_dir: true
+          latexmk_shell_escape: true
+
+      - name: Commit PDFs
+        run: |
+          git add Academic_CV_Template/main.pdf resumes/Ziyi_Sun_Academic_CV_20260808.pdf
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Build CV PDFs"
+          git push
