@@ -164,12 +164,16 @@
 \resumeSubheading
 {Institute of Automation, Chinese Academy of Sciences}{Beijing, China}
 {M.Eng.\ in Computer Application Technology}{Sep.\ 2027 -- Jun.\ 2030 (Expected)}
+\resumeItemListStart
+\item Advisor: \href{https://ia.cas.cn/rcdw/yjy/202404/t20240425_7131817.html}{Long Cheng}
+\resumeItemListEnd
 \resumeSubheading
 {Ocean University of China}{Qingdao, China}
 {B.Eng.\ in Mechanical Design, Manufacturing and Automation}{Sep.\ 2023 -- Jun.\ 2027 (Expected)}
 \resumeItemListStart
-\item GPA: \textbf{3.7/4.0} \quad Rank: \textbf{1/71} \quad Average: \textbf{95.05}
-\item Selected courses: Advanced Mathematics (97), Linear Algebra (93.5), Probability \& Mathematical Statistics (93), Complex Variables \& Integral Transforms (94.5), Numerical Methods (96), Mechanical Vibrations (95), Modern Mechanical Design Theory and Methods (100), Underwater Robotics (97.2)
+\item Advisors: \href{https://it.ouc.edu.cn/wyx/list.htm}{Yuxi Wang}, \href{https://it.ouc.edu.cn/xxz/list.htm}{Xiuze Xia}, \href{https://coe.ouc.edu.cn/2023/0505/c9092a431604/page.htm}{Haoyuan Cheng}
+\item GPA: \textbf{3.7/4.0} (rank: \textbf{1/71})
+\item Courses: Average score \textbf{95.05}/100, with \textbf{38} courses scored 90 or above
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 \vspace{-6mm}
@@ -186,35 +190,45 @@
 \resumeSubHeadingListEnd
 \vspace{-6mm}
 
-\section{\texorpdfstring{\textbf{Publications \& Patents} \hfill \textcolor{darkblue}{\scriptsize C=Conference, S=In Submission, P=Patent, SW=Software}}{Publications and Patents}}
+\section{\texorpdfstring{\textbf{Publications and Preprints} \hfill \textcolor{darkblue}{\scriptsize C=Conference, P=Preprint}}{Publications and Preprints}}
 \vspace{0.2mm}
 \small{
 \begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{SW.1}]}, itemindent=0em, label={}, itemsep=1.2mm]
 
-\item[\textbf{[C.1]}] \href{https://ziyisun85-ops.github.io/assets/files/A_Two_Stage_Learning_Framework_for_Autonomous_Obstacle_Avoidance_of_an_Eel_Like_Robot.pdf}{\textbf{A Two-Stage Learning Framework for Autonomous Obstacle Avoidance of an Eel-Like Robot}}.\\
+\item[\textbf{[C.1]}] \textbf{A Two-Stage Learning Framework for Autonomous Obstacle Avoidance of an Eel-Like Robot}. \href{https://ieeexplore.ieee.org/abstract/document/11765137}{[Paper]}\\
 \textit{\textbf{Ziyi Sun}}, Luwen Li, Changhong He, Shuo Jiang, Zhuoyan Wang, Haoyuan Cheng*.\\
 \textit{IEEE International Conference on Real-time Computing and Robotics (IEEE RCAR)}, 2026.
-\textbf{Best Paper Finalist}.
+\textbf{Best Control Paper Finalist}.
 \resumeItemListStart
   \item Proposed a two-stage framework combining multimodal perception, expert demonstration, PPO, AHTA-CPG, and domain randomization.
   \item Achieved 70\%--90\% success over 60 real water-tank trials.
 \resumeItemListEnd
 
-\item[\textbf{[C.2]}] \href{https://doi.org/10.1109/icccr65461.2025.11072624}{\textbf{Design of Biomimetic Robotic Eel with Omnidirectional Wire-Driven Body and Controlled Central Pattern Generator}}.\\
-Dingyang Yu, Yuanrong Zhong, Qi Chen, Siming Ke, Qianbei Luo, \textit{\textbf{Ziyi Sun}}, Xunqi Zhao.\\
-\textit{IEEE International Conference on Computer, Control and Robotics (ICCCR)}, 2025.
+\item[\textbf{[P.1]}] \textbf{CHOREO: From Single Skill to Continuous Humanoid Execution}. \href{https://arxiv.org/pdf/2609.22274}{[Paper]} \href{https://ziyisun85-ops.github.io/Project-choreo/}{[Project]}\\
+\textit{\textbf{Ziyi Sun}}$^\dagger$, Jingwen Chen$^\dagger$, Xiuze Xia*, Yuxi Wang*, Long Cheng, Zhaoxiang Zhang, Junyu Dong ($^\dagger$equal contribution).\\
+\textit{Preprint}, 2026.
 \resumeItemListStart
-  \item Presented the mechanical design and control framework of a biomimetic robotic eel with an omnidirectional quadruple wire-driven body and CPG-based locomotion control.
+  \item Proposed a multi-skill orchestration and continuous-execution framework built on the unified SkillMotion representation, with a three-layer architecture (task planning, execution scheduling, low-level tracking) that parses language instructions into constrained skill sequences.
+  \item Designed input validation, transition screening, and state diagnosis and recovery mechanisms for orchestrating multi-source short-horizon motions with closed-loop recovery.
 \resumeItemListEnd
 
-\item[\textbf{[S.1]}] \textbf{CHOREO: Every Humanoid Skill as a Trajectory}. \href{https://arxiv.org/abs/2609.22274}{[arXiv]} \href{https://ziyisun85-ops.github.io/Project-choreo/}{[Project]}\\
-\textit{\textbf{Ziyi Sun}}, Jingwen Chen, Yuxi Wang, Xiuze Xia, Long Cheng, Zhaoxiang Zhang, Junyu Dong.\\
-Under review at \textit{AAAI 2027} (CCF-A).
+\item[\textbf{[P.2]}] \textbf{From Hitter to Player: Separating Motor Execution and Strategy in Competitive Humanoid Table Tennis}. \href{https://arxiv.org/pdf/2610.14067}{[Paper]} \href{https://mufanmufan.github.io/hitter-to-player/}{[Project]}\\
+Fanrong Dong$^\dagger$, \textit{\textbf{Ziyi Sun}}$^\dagger$, Ziqi Han, Junhan Sun, Lei Ye, Zetong Jing, Hao Zhao*, Shaoxun Liu*, Rongrong Wang ($^\dagger$equal contribution).\\
+\textit{Preprint}, 2026.
 \resumeItemListStart
-  \item Unified SkillMotion representation and Tracker interface with boundary compatibility assessment, trajectory fusion, and bridging-action retrieval for reusable multi-source humanoid skills.
+  \item Proposed a hierarchical RL framework for competitive humanoid table tennis that uses the ball landing target as the interface between whole-body motor control and high-level strategy, trained through staged self-play for accurate returns and opponent-aware target selection.
+  \item Deployed on a Unitree G1: 99.2\% legal landing rate in simulation, 73.1\%--88.9\% point win rates against three baseline strategies, and complete human--robot games with multi-stroke rallies.
 \resumeItemListEnd
 
-\item[\textbf{[P.1]}] \textbf{A High-Stability PTO System for Duck-Type Wave Energy Converters}.\\
+\end{enumerate}
+}
+
+\section{\texorpdfstring{\textbf{Patents and Software Copyrights} \hfill \textcolor{darkblue}{\scriptsize PT=Patent, SW=Software}}{Patents and Software Copyrights}}
+\vspace{0.2mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{SW.1}]}, itemindent=0em, label={}, itemsep=1.2mm]
+
+\item[\textbf{[PT.1]}] \textbf{A High-Stability PTO System for Duck-Type Wave Energy Converters}.\\
 Zhi Han, \textit{\textbf{Ziyi Sun}}, Haoran Chen, Hailong Zhao, Wenchi Wei, Xueyao Wang, Hongda Shi.\\
 Invention Patent (First Student Inventor).
 
@@ -287,6 +301,10 @@ Software Copyright (No.\ 2024SR0140235).
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
 
+\resumePOR{National Scholarship}{}{2026}
+\resumePOR{Wenyuan Scholarship, Ocean University of China}{ (highest undergraduate honor; 3 recipients annually)}{2026}
+\resumePOR{Special Scholarship, Ocean University of China}{ (10 recipients university-wide annually)}{2026}
+\resumePOR{Outstanding Student Model, Ocean University of China}{ (10 recipients university-wide annually)}{2026}
 \resumePOR{Shandong Provincial Government Scholarship}{}{2025}
 \resumePOR{First-Class Comprehensive Scholarship, Ocean University of China}{}{2024 \& 2025}
 \resumePOR{Outstanding Student / Outstanding Student Cadre, Ocean University of China}{}{2024 \& 2025}
