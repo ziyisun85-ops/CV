@@ -117,6 +117,13 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
 \newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+
+% Honors grouped by year: the year sits in a left column, its awards are bulleted beside it
+\newcommand{\resumeYearListStart}{\begin{itemize}[leftmargin=10mm, labelwidth=8mm, labelsep=2mm, align=left, itemsep=1mm]}
+\newcommand{\resumeYearListEnd}{\end{itemize}\vspace{-4mm}}
+\newcommand{\resumeYear}[1]{\item[\textbf{#1}]\begin{itemize}[leftmargin=*, labelsep=1mm, label=\labelitemi, nosep]}
+\newcommand{\resumeYearEnd}{\end{itemize}}
+\newcommand{\resumeAward}[2]{\item\textbf{#1}#2}
 \newcommand{\cvsection}[1]{%
 \vspace{2mm}
 \begin{tcolorbox}
@@ -307,26 +314,30 @@ Software Copyright (No.\ 2024SR0140235).
 
 \section{\textbf{Honors and Awards}}
 \vspace{-0.4mm}
-\resumeSubHeadingListStart
+\resumeYearListStart
 
-\resumePOR{National Scholarship}{}{2026}
-\resumePOR{Wenyuan Scholarship, Ocean University of China}{ (highest undergraduate honor; 3 recipients annually)}{2026}
-\resumePOR{Special Scholarship, Ocean University of China}{ (10 recipients university-wide annually)}{2026}
-\resumePOR{Outstanding Student Model, Ocean University of China}{ (10 recipients university-wide annually)}{2026}
-\resumePOR{Shandong Provincial Government Scholarship}{}{2025}
-\resumePOR{First-Class Comprehensive Scholarship, Ocean University of China}{}{2024 \& 2025}
-\resumePOR{Outstanding Student / Outstanding Student Cadre, Ocean University of China}{}{2024 \& 2025}
-\resumePOR{National First Prize, National 3D Digital Innovation Design Competition}{}{2025 \& 2026}
-\resumePOR{National Second Prize, Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM)}{}{2025}
-\resumePOR{Honorable Mention, Mathematical Contest in Modeling (MCM)}{}{2025}
-\resumePOR{National Third Prize, 18th National College Student Energy Conservation Competition}{}{2024}
-\resumePOR{National Gold Award, 3rd ``Chuangyi Cup'' National Undergraduate Extracurricular Academic Contest}{}{2024}
-\resumePOR{National Second Prize, 14th Marine Vehicle Design and Production Competition}{}{2025}
-\resumePOR{National First Prize, CRRC Cup National Undergraduate Renewable Energy Competition}{}{2026}
-\resumePOR{Science and Technology Innovation Pioneer Team, College of Engineering, OUC}{}{2024}
+\resumeYear{2026}
+  \resumeAward{National Scholarship}{}
+  \resumeAward{Wenyuan Scholarship, Ocean University of China}{ (highest undergraduate honor; 3 recipients annually)}
+  \resumeAward{Special Scholarship, Ocean University of China}{ (10 recipients university-wide annually)}
+  \resumeAward{Outstanding Student Model, Ocean University of China}{ (10 recipients university-wide annually)}
+  \resumeAward{National First Prize, National 3D Digital Innovation Design Competition}{}
+\resumeYearEnd
 
-\resumeSubHeadingListEnd
-\vspace{-6mm}
+\resumeYear{2025}
+  \resumeAward{Shandong Provincial Government Scholarship}{}
+  \resumeAward{First-Class Comprehensive Scholarship, Ocean University of China}{}
+  \resumeAward{Outstanding Student, Ocean University of China}{}
+  \resumeAward{National First Prize, National 3D Digital Innovation Design Competition}{}
+  \resumeAward{National Second Prize, Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM)}{}
+\resumeYearEnd
+
+\resumeYear{2024}
+  \resumeAward{First-Class Comprehensive Scholarship, Ocean University of China}{}
+  \resumeAward{Outstanding Student Cadre, Ocean University of China}{}
+\resumeYearEnd
+
+\resumeYearListEnd
 
 \section{\textbf{Leadership Experience}}
 \vspace{-0.4mm}
